@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./car.html">Car</a></li>
+            <li><a href="./client.html">Client</a></li>
+            <li><a href="./message.html">Message</a></li>
+        </ul>
+    </nav>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>BRAND</th>
+                    <th>MODEL</th>
+                    <th>CATHEGORY_ID</th>
+                    <th>DETALLES</th>
+                    <th>ELIMINAR</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <button>Agregar carro</button>
+        <div>
+            <div>
+                <label for="txtId">ID</label>
+                <input type="txtId" type="number" placeholder="ingrese el id">
+            </div>
+            <div>
+                <label for="txtBrand">BRAND</label>
+                <input type="txtBrand" type="text" placeholder="ingrese la marca">
+            </div>
+            <div>
+                <label for="txtModel">MODEL</label>
+                <input type="txtModel" type="number" placeholder="ingrese el modelo">
+            </div>
+            <div>
+                <label for="txtCategoryId">CATEGORY ID</label>
+                <input type="txtCategoryId" type="number" placeholder="ingrese la categoria">
+            </div>
+            <button>Crear</button>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+        </div>
+    </div>
+
+    <script src="./scripts/car.js"></script>
+</body>
+</html>

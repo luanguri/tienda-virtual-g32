@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./car.html">Car</a></li>
+            <li><a href="./client.html">Client</a></li>
+            <li><a href="./message.html">Message</a></li>
+        </ul>
+    </nav>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>AGE</th>
+                    <th>DETALLES</th>
+                    <th>ELIMINAR</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <button>Agregar cliente</button>
+        <div>
+            <div>
+                <label for="txtId">ID</label>
+                <input type="txtId" type="number" placeholder="ingrese el id">
+            </div>
+            <div>
+                <label for="txtName">NAME</label>
+                <input type="txtName" type="text" placeholder="ingrese el nombre">
+            </div>
+            <div>
+                <label for="txtEmail">EMAIL</label>
+                <input type="txtEmail" type="text" placeholder="ingrese el email">
+            </div>
+            <div>
+                <label for="txtAge">AGE</label>
+                <input type="txtAge" type="number" placeholder="ingrese la edad">
+            </div>
+            <button>Crear</button>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+        </div>
+    </div>
+    <script src="./scripts/client.js"></script>
+</body>
+</html>
