@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car</title>
 </head>
 <body>
+    <h1>Catalogo tienda de carros</h1>
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -30,30 +32,30 @@
             <tbody id="tableBody">
             </tbody>
         </table>
-        <button>Agregar carro</button>
+
         <div>
-            <div>
-                <label for="txtId">ID</label>
-                <input type="txtId" type="number" placeholder="ingrese el id">
-            </div>
-            <div>
-                <label for="txtBrand">BRAND</label>
-                <input type="txtBrand" type="text" placeholder="ingrese la marca">
-            </div>
-            <div>
-                <label for="txtModel">MODEL</label>
-                <input type="txtModel" type="number" placeholder="ingrese el modelo">
-            </div>
-            <div>
-                <label for="txtCategoryId">CATEGORY ID</label>
-                <input type="txtCategoryId" type="number" placeholder="ingrese la categoria">
-            </div>
-            <button>Crear</button>
-            <button>Actualizar</button>
-            <button>Eliminar</button>
+            <h2>Crear y modificar un carro</h2>
+            <form>
+                    <label for="txtId">Id</label>
+                    <input id="txtId" type="number" placeholder="ingrese el id">
+                    <br />
+                    <label for="txtBrand">Brand</label>
+                    <input id="txtBrand" type="text" size="30" maxlength="30" placeholder="ingrese la marca">
+                    <br />
+                    <label for="txtModel">Model</label>
+                    <input id="txtModel" type="number" placeholder="ingrese el modelo">
+                    <br />
+                    <label for="txtCategoryId">Category id</label>
+                    <input id="txtCategoryId" type="number" placeholder="ingrese la categoria">
+            </form>
+            <br />
+            <button onclick="crearCar()">Crear</button>
+            <button onclick="actualizarCar()"> Actualizar</button>
+
         </div>
     </div>
-
+    <br>
+    <p>Proyecto creado por Luz Angela Guevara</p>
     <script src="./scripts/car.js"></script>
 </body>
 </html>

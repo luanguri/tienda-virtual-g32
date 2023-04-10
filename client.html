@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <h1>Catalogo tienda de carros</h1>
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -30,29 +32,32 @@
             <tbody id="tableBody">
             </tbody>
         </table>
-        <button>Agregar cliente</button>
+
         <div>
+            <h2>Crear y modificar un cliente</h2>
             <div>
                 <label for="txtId">ID</label>
-                <input type="txtId" type="number" placeholder="ingrese el id">
+                <input id="txtId" type="number" placeholder="ingrese el id">
             </div>
             <div>
                 <label for="txtName">NAME</label>
-                <input type="txtName" type="text" placeholder="ingrese el nombre">
+                <input id="txtName" type="text" placeholder="ingrese el nombre">
             </div>
             <div>
                 <label for="txtEmail">EMAIL</label>
-                <input type="txtEmail" type="text" placeholder="ingrese el email">
+                <input id="txtEmail" type="text" placeholder="ingrese el email">
             </div>
             <div>
                 <label for="txtAge">AGE</label>
-                <input type="txtAge" type="number" placeholder="ingrese la edad">
+                <input id="txtAge" type="number" placeholder="ingrese la edad">
             </div>
-            <button>Crear</button>
-            <button>Actualizar</button>
-            <button>Eliminar</button>
+            <button onclick="crearClient()">Crear</button>
+            <button onclick="actualizarClient()"> Actualizar</button>
+
         </div>
     </div>
+    <br>
+    <p>Proyecto creado por Luz Angela Guevara</p>
     <script src="./scripts/client.js"></script>
 </body>
 </html>
